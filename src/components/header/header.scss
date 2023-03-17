@@ -1,0 +1,245 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    padding: 24px 0;
+
+    &-logo {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        width: 190.97px;
+        height: 32px;
+
+        @include devices {
+            width: vc(159.03);
+            height: vc(32);
+        }
+    }
+
+    &-nav {
+        position: relative;
+        left: -62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin: 0 20px;
+
+                @include devices {
+                    margin-bottom: vc(52);
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $color-white;
+                letter-spacing: -0.04em;
+
+                @include hover {
+                    //font-weight: 500;
+                    opacity: 0.6 !important;
+                }
+
+                @include devices {
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+            }
+
+            @include devices {
+                flex-flow: column;
+            }
+        }
+
+        @include devices {
+            position: absolute;
+            left: vc(-16);
+            right: vc(-16);
+            top: vc(-16);
+            bottom: 0;
+            height: 100vh;
+            height: var(--vh);
+            background: url("../assets/images/menu.jpg") center center no-repeat;
+            background-size: cover;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s linear;
+
+            .is-menu-opened & {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &-link {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: $color-white;
+
+        svg {
+            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+
+            @include devices {
+                margin-right: 24px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        @include desktop {
+            position: relative;
+            top: 6px;
+        }
+    }
+
+    @include devices {
+        padding: vc(24) vc(16);
+
+        .container {
+            padding: 0;
+        }
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+
+        @include devices {
+            margin-top: 0;
+        }
+    }
+
+    &-burger {
+        position: relative;
+        z-index: 1;
+        width: vc(32);
+        height: vc(32);
+
+        svg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition: all 0.2s linear;
+
+            &:first-child {
+
+            }
+
+            &:last-child {
+                transform: scale(0);
+            }
+
+            .is-menu-opened & {
+                &:first-child {
+                    transform: scale(0);
+                }
+
+                &:last-child {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    &-lang {
+        position: relative;
+
+        .is-current, .is-sup {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            cursor: pointer;
+            transition: all 0.3s linear;
+
+            img {
+                margin-right: 12px;
+                width: 22px;
+                height: 16px;
+            }
+
+            svg {
+                margin-left: 10px;
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &.is-active{
+            .is-current {
+                border-radius: 12px 12px 0px 0px;
+            }
+
+            .is-sup {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        .is-sup {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 44px;
+            border-radius: 0 0 12px 12px;
+            transition: all 0.3s linear;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    @include devices {
+        position: absolute;
+    }
+}
+
+.social {
+    display: flex;
+
+    a {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-left: 8px;
+
+        @include hover {
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.roadmap {
+    position: relative;
+    margin-bottom: 150px;
+    $__: &;
+
+    &__inner {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 73px;
+    }
+
+    &__item {
+        position: relative;
+        width: 320px;
+
+        &--1 {
+            padding-top: 76px;
+            #{$__}__fisrtimage {
+                top: -257px;
+                left: -174px;
+                width: 646.47px;
+                height: 646.47px;
+            }
+            #{$__}__lastimage {
+                right: -35px;
+                top: 208px;
+                width: 290.51px;
+                height: 290.51px;
+            }
+           .roadmap__content {
+               width: 320px;
+               height: 168px;
+               background: url("../assets/images/shadow/15.png") center center no-repeat;
+               background-size: contain;
+           }
+        }
+
+        &--2 {
+            #{$__}__fisrtimage {
+                top: -191px;
+                left: -117px;
+                width: 492.26px;
+                height: 492.26px;
+            }
+
+            #{$__}__lastimage {
+                left: 45px;
+                top: 180px;
+                width: 306.75px;
+                height: 306.75px;
+            }
+            .roadmap__content {
+                width: 320px;
+                height: 196px;
+                background: url("../assets/images/shadow/16.png") center center no-repeat;
+                background-size: contain;
+            }
+
+
+        }
+
+        &--3 {
+            padding-top: 76px;
+            #{$__}__fisrtimage {
+                top: -368px;
+                left: -198px;
+                width: 670.35px;
+                height: 670.35px;
+            }
+            #{$__}__lastimage {
+                width: 220.52px;
+                height: 220.52px;
+            }
+            .roadmap__content {
+                width: 312px;
+                height: 168px;
+                background: url("../assets/images/shadow/17.png") center center no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    &__fisrtimage {
+        position: absolute;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        span {
+            padding-right: 2px;
+            font-weight: 800;
+            background: linear-gradient(180deg, #6EB738 0%, #148F6F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            text-align: center;
+            letter-spacing: -0.04em;
+        }
+    }
+
+    &__insert {
+        margin-left: 16px;
+        padding: 8px 16px;
+        background: linear-gradient(180deg, #6EB738 0%, #148F6F 100%);
+        border-radius: 60px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__text {
+
+    }
+
+    &__lastimage {
+        position: absolute;
+    }
+
+    &__svg {
+        position: absolute;
+        top: -169px;
+        left: -59px;
+
+        width: 1288.09px;
+        height: 891.92px;
+    }
+}

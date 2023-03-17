@@ -1,0 +1,287 @@
+.container {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    max-width: vc(1166);
+
+    &--center {
+        display: flex;
+
+        @include desktop {
+
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    &--justify {
+        justify-content: space-between;
+    }
+
+    &--align-center {
+        align-items: center;
+    }
+
+    &--cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 36px;
+
+        @include devices {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+    }
+
+    &--right {
+        @include desktop {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+        }
+    }
+
+    @include devices {
+        padding: 0 vc(16);
+        max-width: 100%;
+
+        &--cases {
+            margin-top: 159px;
+        }
+
+        &--partners {
+            flex-wrap: wrap;
+            overflow: initial;
+        }
+    }
+}
+
+.title {
+    font-weight: 700;
+    letter-spacing: -0.04em;
+
+    span {
+        position: relative;
+        padding-right: 8px;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 25px;
+
+            z-index: 0;
+            height: 69%;
+            background: linear-gradient(180deg, rgba(110, 183, 56, 0.12) 0%, rgba(20, 143, 111, 0.12) 100%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 25px;
+            width: 100%;
+            height: 1px;
+            z-index: 1;
+            background: linear-gradient(180deg, #6EB738 0%, #148F6F 100%);
+        }
+    }
+
+    &-xxl {
+        font-size: 88px;
+        line-height: 96px;
+    }
+
+    &-xl {
+        font-size: 40px;
+        line-height: 48px;
+
+        span {
+
+
+            &::before {
+                bottom: 10px;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+        }
+    }
+
+    &-md {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.12em;
+    }
+}
+
+.text {
+    font-weight: 400;
+
+    &-md {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.04em;
+    }
+
+    &--1 {
+        max-width: 400px;
+    }
+
+    &--2 {
+        margin: 0 auto;
+        width: 997px;
+    }
+
+    &--3 {
+        width: 480px;
+    }
+}
+
+.lh-32 {
+    line-height: 32px;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+.color-black {
+    color: $color-black;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-41 {
+    margin-bottom: 41px;
+}
+
+.mb-31 {
+    margin-bottom: 31px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-54 {
+    margin-top: 54px;
+}
+
+.insert {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+
+    }
+
+    &-1 {
+        &::after {
+            margin-left: -261px;
+            top: 58px;
+            width: 778px;
+            height: 449px;
+            background: url("../assets/images/shadow/1.png") center center no-repeat;
+        }
+    }
+
+    &-2 {
+        margin-bottom: 58px;
+
+        &::after {
+            margin-left: -518px;
+            top: 58px;
+            width: 989px;
+            height: 449px;
+            background: url("../assets/images/shadow/3.png") center center no-repeat;
+        }
+    }
+
+    &-3 {
+        margin-top: 240px;
+
+        &::after {
+            margin-left: -518px;
+            top: -136px;
+            width: 1032px;
+            height: 434px;
+            background: url("../assets/images/shadow/5.png") center center no-repeat;
+        }
+    }
+
+    &-image {
+        flex-shrink: 0;
+
+        &--1 {
+            position: relative;
+            right: 40px;
+            margin: 0 -53px;
+            width: 581px;
+            height: 581px;
+
+            &-1 {
+                right: 81px;
+                top: 20px;
+                margin: 0 -68px;
+                width: 610px;
+                height: 610px;
+            }
+        }
+
+        &--2 {
+            position: relative;
+            width: 546px;
+            height: 546px;
+        }
+
+        &--4 {
+            position: absolute;
+            left: -84px;
+            top: -67px;
+        }
+
+        &--5 {
+            position: absolute;
+            right: -100px;
+            top: -38px;
+        }
+    }
+
+    &-text {
+        &--2 {
+            margin-left: 236px;
+            padding-top: 50px;
+        }
+    }
+}
