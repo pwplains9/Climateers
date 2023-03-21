@@ -3,8 +3,10 @@
     margin-top: 79px;
 
     &__left {
-        width: 545px;
-        flex-shrink: 0;
+       @include desktop {
+           width: 545px;
+           flex-shrink: 0;
+       }
 
         .title-md {
             letter-spacing: -0.04em;
@@ -46,6 +48,22 @@
                 width: 550.5px;
                 height: 255.96px;
                 background: url("../assets/images/shadow/12.png") center center no-repeat;
+
+                @include devices {
+                    top: -36px;
+                    width: 331px;
+                    height: 197px;
+                    background: url("../assets/images/shadow/12-1.png") center center no-repeat;
+                }
+            }
+
+            @include devices {
+                padding: 0px 20px 0 25px;
+                margin-bottom: 75px;
+
+                img {
+                    transform: scaleX(-1);
+                }
             }
         }
 
@@ -59,6 +77,26 @@
                 width: 545px;
                 height: 231.46px;
                 background: url("../assets/images/shadow/13.png") center center no-repeat;
+
+                @include devices {
+                    top: -29px;
+                    left: -5px;
+                    width: 337px;
+                    height: 158px;
+                    background: url("../assets/images/shadow/13-1.png") center center no-repeat;
+
+                }
+
+
+            }
+
+            @include devices {
+                margin-bottom: 88px;
+                padding: 0 25px;
+
+                img {
+                    transform: scaleX(-1);
+                }
             }
         }
 
@@ -71,6 +109,18 @@
                 width: 545px;
                 height: 231.46px;
                 background: url("../assets/images/shadow/14.png") center center no-repeat;
+
+                @include devices {
+                    left: -6px;
+                    top: -18px;
+                    width: 337px;
+                    height: 158px;
+                    background: url("../assets/images/shadow/14-1.png") center center no-repeat;
+                }
+            }
+
+            @include devices {
+                padding: 0 35px 0 25px;
             }
         }
     }
@@ -80,10 +130,22 @@
         flex-shrink: 0;
         width: 152px;
         height: 152px;
+
+        @include devices {
+            position: absolute;
+            right: 4px;
+            top: -58px;
+            width: 100px;
+            height: 100px;
+        }
     }
 
     &__text {
 
+    }
+
+    @include devices {
+        margin-top: 68px;
     }
 }
 
@@ -119,6 +181,12 @@
         padding: 48px;
         background: $color-white;
         border-radius: 40px;
+
+        @include devices {
+            padding: 24px;
+            width: 820px;
+
+        }
     }
 
     &__top {
@@ -139,10 +207,20 @@
         &--1 {
 
             width: 400px;
+
+            @include devices {
+                width: 123px;
+                flex-shrink: 0;
+            }
         }
 
         &--2 {
             width: 120px;
+
+            @include devices {
+                display: flex;
+                align-items: center;
+            }
         }
 
         &--3 {
@@ -172,6 +250,16 @@
             margin-bottom: 0;
         }
     }
+
+    @include devices {
+        width: 105%;
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+}
+
+.table-outer {
+    position: relative;
 }
 
 .founds {
@@ -181,11 +269,17 @@
     //background: url('../assets/images/get-me/6.png') center 22% no-repeat;
     //background-size: contain;
 
-    svg {
+    &__image {
 
         margin: -80px auto 0;
         width: 992px;
         height: 793.26px;
+
+        @include devices {
+            margin: -10px auto 0;
+            width: 100%;
+            height: auto;
+        }
     }
 
     &__el {
@@ -196,5 +290,13 @@
         top: 20.3%;
         width: 429px;
         height: 429px;
+    }
+
+    @include devices {
+        padding-top: 56px;
+        height: auto;
+        min-height: 800px;
+        background-size: 100% !important;
+        background-position: 0% 25% !important;
     }
 }

@@ -15,7 +15,7 @@
         height: 32px;
 
         @include devices {
-            width: vc(159.03);
+            width: vc(190.97);
             height: vc(32);
         }
     }
@@ -70,8 +70,9 @@
             position: absolute;
             left: vc(-16);
             right: vc(-16);
-            top: vc(-16);
+            top: vc(-25);
             bottom: 0;
+            flex-flow: column;
             height: 100vh;
             height: var(--vh);
             background: url("../assets/images/menu.jpg") center center no-repeat;
@@ -83,6 +84,10 @@
             .is-menu-opened & {
                 opacity: 1;
                 visibility: visible;
+            }
+
+            ul {
+                margin-bottom: vh(100);
             }
         }
     }
@@ -240,6 +245,12 @@
 
         @include hover {
             opacity: 0.5;
+        }
+
+        @include devices {
+            margin: 0 12px;
+            width: 24px;
+            height: 24px;
         }
     }
 }

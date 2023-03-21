@@ -17,7 +17,7 @@ const trigger = (img) => {
 
 const add = (images) => {
     observer = lozad(images, {
-        rootMargin: `${innerHeight + (innerHeight / 2)}px`,
+        rootMargin: `${innerHeight * 2}px`,
         threshold: 0, // ratio of element convergence
         enableAutoReload: true, // it will reload the new image when validating attributes changes
         loaded(el) {

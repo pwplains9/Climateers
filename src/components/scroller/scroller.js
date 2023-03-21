@@ -94,13 +94,15 @@ const init = () => {
     });
 
 
-    makeFriendsWithScrollTrigger();
+    if(!helpers.isDevices()) {
+        makeFriendsWithScrollTrigger();
 
-    onScroll(_throttle((e) => {
-        if (e.scroll.y > e.limit.y) {
-            setPosition(e.limit.y);
-        }
-    }, 250));
+        onScroll(_throttle((e) => {
+            if (e.scroll.y > e.limit.y) {
+                setPosition(e.limit.y);
+            }
+        }, 250));
+    }
 
     if (helpers.isScrollLocked()) {
         scroller.stop();

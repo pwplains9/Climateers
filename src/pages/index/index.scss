@@ -5,13 +5,12 @@
 
         @include devices {
 
-            //height: 100vh;
-            //height: var(--vh);
-            //
-            //.header + .container {
-            //    position: absolute;
-            //    bottom: 30px;
-            //}
+            height: 100vh;
+            height: var(--vh);
+
+            .container {
+                height: 100%;
+            }
 
             .is-lock-scroll & {
                 z-index: 9999;
@@ -24,7 +23,7 @@
 
 
         @include devices {
-            padding-top: 0;
+            padding-top: 59px;
         }
     }
 
@@ -34,18 +33,35 @@
         @include devices {
             padding-top: 98px;
             padding-bottom: 87px;
+
+            .title {
+                @include devices {
+                    text-align: left !important;
+                }
+            }
         }
     }
 
     &--4 {
         padding-top: 136px;
+
+        @include devices {
+            padding-top: 54px;
+
+            .insert-2 {
+                .text {
+                    padding-right: 24%;
+                }
+            }
+
+        }
     }
 
     &--5 {
         padding-top: 176px;
 
         @include devices {
-            padding-top: 100px;
+            padding-top: 165px;
         }
     }
 
@@ -54,7 +70,11 @@
         padding-top: 150px;
 
         @include devices {
-            padding-top: 0;
+            padding-top: 146px;
+
+            .title-xl {
+                text-align: left !important;
+            }
         }
     }
 
@@ -62,7 +82,7 @@
         padding-top: 169px;
 
         @include devices {
-            padding-top: 96px;
+            padding-top: 86px;
         }
     }
 
@@ -71,17 +91,51 @@
         padding-bottom: 0;
 
         @include devices {
-            padding-top: 107px;
-            padding-bottom: 78px;
+            padding-top: 96px;
+            padding-bottom: 0;
         }
+    }
+
+    &--9 {
+      @include devices {
+          padding-top: 108px;
+      }
     }
 
     &--10 {
         padding-top: 65px;
+
+        @include devices {
+            padding-top: 120px;
+        }
     }
 
     &--last {
         padding-top: 15px;
+
+        @include devices {
+            padding-top: 69px;
+
+            .insert-1 {
+                flex-flow: column;
+
+                .insert-text {
+                    order: 1;
+                }
+
+                .insert-image {
+                    margin: 0 -40px;
+                    order: 2;
+                    width: 386px;
+                    height: 386px;
+                }
+
+                &::after {
+                    background-size: cover;
+                    height: 783px;
+                }
+            }
+        }
     }
 }
 

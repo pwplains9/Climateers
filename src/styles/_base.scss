@@ -171,6 +171,10 @@ iframe {
     min-height: 100vh; // fallback
     // stylelint-disable-next-line
     min-height: var(--vh);
+
+    @include devices {
+        overflow: hidden;
+    }
 }
 .c-scrollbar {
     z-index: 1;

@@ -152,7 +152,7 @@ const init = () => {
         // })
 
 
-    }, 1000)
+    }, 0)
 
     resizeWidth = innerWidth;
 

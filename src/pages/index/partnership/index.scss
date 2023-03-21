@@ -1,8 +1,7 @@
 .partnership {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
     min-height: 682px;
 
     &__image {
@@ -26,5 +25,29 @@
     &__card {
         position: relative;
         margin-bottom: 36px;
+
+        @include devices {
+            margin-right: 8px;
+            width: 100%;
+            flex-shrink: 0;
+
+            img {
+
+            }
+        }
+    }
+
+    @include desktop {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include devices {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: auto;
+        min-height: auto;
+        padding-bottom: 30px;
     }
 }

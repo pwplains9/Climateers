@@ -16,13 +16,8 @@
         background: linear-gradient(180deg, rgba(20, 25, 32, 0.96) 0%, rgba(20, 25, 32, 0.9185) 13.51%, rgba(20, 25, 32, 0.4955) 27.37%, rgba(20, 25, 32, 0.153804) 50.96%, #141920 77.59%);
     }
 
-
-
     &-cards {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 21px;
+
 
         .title {
             span {
@@ -31,6 +26,17 @@
                 }
             }
         }
+
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 21px;
+        }
+
+        @include devices {
+            margin-top: -9px;
+        }
     }
 
     &-card {
@@ -38,9 +44,16 @@
         width: 320px;
         text-align: center;
 
-        &:nth-child(2) {
-            position: relative;
-            top: 97px;
+        @include desktop {
+            &:nth-child(2) {
+                position: relative;
+                top: 97px;
+            }
+        }
+
+        @include devices {
+            margin: 0 0 24px;
+            width: 100%;
         }
     }
 
@@ -86,5 +99,25 @@
         height: 148px;
         background: url('../assets/images/the-game/s-4.png') center center no-repeat;
         background-size: contain;
+
+        @include devices {
+            margin: 42px auto 0;
+            width: 328px;
+            height: 180px;
+            background: url('../assets/images/the-game/s-4-2.png') center center no-repeat;
+            background-size: contain;
+
+            .title {
+                padding: 0 38px;
+                text-align: center !important;
+            }
+        }
+    }
+
+    @include devices {
+        padding-top: 55px;
+        height: auto;
+        background-size: 120%;
+        background-position: 128px 28px;
     }
 }

@@ -1,10 +1,18 @@
 .no-fear {
-    display: flex;
-    justify-content: space-between;
-    height: 637px;
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        height: 637px;
+    }
 
     &__block {
-        width: 558px;
+        @include desktop {
+            width: 558px;
+        }
+
+        @include devices {
+            margin-bottom: 15px;
+        }
     }
 
     &__image {
@@ -21,14 +29,38 @@
 
         &--1 {
 
-            background: url('../assets/images/shadow/10.png') center center no-repeat;
-            background-size: contain;
+            @include desktop {
+                background: url('../assets/images/shadow/10.png') center center no-repeat;
+                background-size: contain;
+            }
+
+            @include devices {
+                background: url('../assets/images/shadow/10-1.png') center center no-repeat;
+                background-size: contain;
+            }
         }
+
         &--2 {
             margin-top: -63px;
             margin-left: 17px;
-            background: url('../assets/images/shadow/11.png') center center no-repeat;
-            background-size: contain;
+
+            @include desktop {
+                background: url('../assets/images/shadow/11.png') center center no-repeat;
+                background-size: contain;
+            }
+
+            @include devices {
+                background: url('../assets/images/shadow/11-1.png') center center no-repeat;
+                background-size: contain;
+            }
+        }
+
+        @include devices {
+            padding: 21px 30px;
+            width: 328px;
+            height: 181px;
+
+
         }
     }
 }

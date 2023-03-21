@@ -6,9 +6,11 @@
     &__inner {
         position: relative;
 
-        display: flex;
-        justify-content: space-between;
-        margin-top: 73px;
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 73px;
+        }
     }
 
     &__item {
@@ -17,24 +19,32 @@
 
         &--1 {
             padding-top: 76px;
+
             #{$__}__fisrtimage {
                 top: -257px;
                 left: -174px;
                 width: 646.47px;
                 height: 646.47px;
             }
+
             #{$__}__lastimage {
                 right: -35px;
                 top: 208px;
                 width: 290.51px;
                 height: 290.51px;
             }
-           .roadmap__content {
-               width: 320px;
-               height: 168px;
-               background: url("../assets/images/shadow/15.png") center center no-repeat;
-               background-size: contain;
-           }
+
+            .roadmap__content {
+                width: 320px;
+                height: 168px;
+                background: url("../assets/images/shadow/15.png") center center no-repeat;
+                background-size: contain;
+            }
+
+            @include devices {
+                margin-bottom: 127px;
+                padding-top: 82px;
+            }
         }
 
         &--2 {
@@ -51,6 +61,7 @@
                 width: 306.75px;
                 height: 306.75px;
             }
+
             .roadmap__content {
                 width: 320px;
                 height: 196px;
@@ -58,21 +69,26 @@
                 background-size: contain;
             }
 
-
+            @include devices {
+                margin-bottom: 54px;
+            }
         }
 
         &--3 {
             padding-top: 76px;
+
             #{$__}__fisrtimage {
                 top: -368px;
                 left: -198px;
                 width: 670.35px;
                 height: 670.35px;
             }
+
             #{$__}__lastimage {
                 width: 220.52px;
                 height: 220.52px;
             }
+
             .roadmap__content {
                 width: 312px;
                 height: 168px;
@@ -136,5 +152,16 @@
 
         width: 1288.09px;
         height: 891.92px;
+
+        @include devices {
+            top: -4px;
+            left: -105px;
+            width: 538.67px;
+            height: 808.48px;
+        }
+    }
+
+    @include mobile {
+        margin-bottom: 0;
     }
 }

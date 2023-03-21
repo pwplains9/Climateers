@@ -6,10 +6,19 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+
         margin: 0 -16px;
         gap: 16px;
         color: $color-black;
+
+        @include desktop {
+            justify-content: center;
+        }
+
+        @include devices {
+            flex-wrap: nowrap;
+            overflow-y: auto;
+        }
     }
 
     &__item {
@@ -43,6 +52,11 @@
         &:nth-child(2) {
             margin: 0 8.5px;
         }
+
+        @include devices {
+            flex-shrink: 0;
+            width: 360px;
+        }
     }
 
     &__image {
@@ -60,5 +74,12 @@
         .title-md {
             letter-spacing: -0.04em;
         }
+    }
+
+    @include devices {
+        padding-top: 0;
+        background-size: 140% !important;
+        background-position: -75px -2px !important;
+        height: 389px;
     }
 }
