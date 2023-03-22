@@ -56,8 +56,8 @@
                 }
 
                 @include devices {
-                    font-size: 24px;
-                    line-height: 24px;
+                    font-size: vc(24);
+                    line-height: vc(24);
                 }
             }
 
@@ -110,9 +110,9 @@
             height: 20px;
 
             @include devices {
-                margin-right: 24px;
-                width: 24px;
-                height: 24px;
+                margin-right: vc(24);
+                width: vc(24);
+                height: vc(24);
             }
         }
 
@@ -248,9 +248,9 @@
         }
 
         @include devices {
-            margin: 0 12px;
-            width: 24px;
-            height: 24px;
+            margin: 0 vc(12);
+            width: vc(24);
+            height: vc(24);
         }
     }
 }
