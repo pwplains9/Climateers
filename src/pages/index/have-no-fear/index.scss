@@ -56,9 +56,9 @@
         }
 
         @include devices {
-            padding: 21px 30px;
-            width: 328px;
-            height: 181px;
+            padding: vc(21) vc(30);
+            width: vc(328);
+            height: vc(181);
 
 
         }

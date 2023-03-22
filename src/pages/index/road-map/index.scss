@@ -39,11 +39,16 @@
                 height: 168px;
                 background: url("../assets/images/shadow/15.png") center center no-repeat;
                 background-size: contain;
+
+                @include devices {
+                    width: vc(320);
+                    height: vc(168);
+                }
             }
 
             @include devices {
-                margin-bottom: 127px;
-                padding-top: 82px;
+                margin-bottom: vc(127);
+                padding-top: vc(82);
             }
         }
 
@@ -67,10 +72,15 @@
                 height: 196px;
                 background: url("../assets/images/shadow/16.png") center center no-repeat;
                 background-size: contain;
+
+                @include devices {
+                    width: vc(320);
+                    height: vc(196);
+                }
             }
 
             @include devices {
-                margin-bottom: 54px;
+                margin-bottom: vc(54);
             }
         }
 
@@ -94,7 +104,16 @@
                 height: 168px;
                 background: url("../assets/images/shadow/17.png") center center no-repeat;
                 background-size: contain;
+
+                @include devices {
+                    width: vc(312);
+                    height: vc(168);
+                }
             }
+        }
+
+        @include devices {
+            width: vc(320);
         }
     }
 
@@ -154,10 +173,10 @@
         height: 891.92px;
 
         @include devices {
-            top: -4px;
-            left: -105px;
-            width: 538.67px;
-            height: 808.48px;
+            top: vc(-4);
+            left: vc(-105);
+            width: vc(538.67);
+            height: vc(808.48);
         }
     }
 

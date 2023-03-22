@@ -5,8 +5,8 @@
         height: 32px;
 
         @include devices {
-            width: 99px;
-            height: 20px;
+            width: vc(99);
+            height: vc(20);
             order: 1;
         }
     }
@@ -19,7 +19,7 @@
 
         @include devices {
             order: 3;
-            margin-top: 16px;
+            margin-top: vc(16);
         }
     }
 
@@ -35,13 +35,13 @@
                 margin-right: 44px;
 
                 @include devices {
-                    margin-right: 25px;
+                    margin-right: vc(25);
                 }
             }
 
             @include devices {
-                font-size: 12px;
-                line-height: 16px;
+                font-size: vc(12);
+                line-height: vc(16);
                 letter-spacing: -0.04em;
             }
         }
@@ -89,16 +89,16 @@
             order: 4;
             width: 100%;
             justify-content: flex-end;
-            margin-top: 10px;
-            font-size: 12px;
-            line-height: 16px;
+            margin-top: vc(10);
+            font-size: vc(12);
+            line-height: vc(16);
             opacity: 0.8;
         }
     }
 
     @include devices {
-        margin-top: 95px;
-        padding: 0 16px;
+        margin-top: vc(95);
+        padding: 0 vc(16);
 
         .container {
             //flex-flow: column;
@@ -112,6 +112,6 @@
     padding: 36px 0 32px;
 
     @include devices {
-        padding: 27px 0 20px;
+        padding: vc(27) 0 vc(20);
     }
 }

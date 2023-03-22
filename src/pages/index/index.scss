@@ -23,7 +23,7 @@
 
 
         @include devices {
-            padding-top: 59px;
+            padding-top: vc(59);
         }
     }
 
@@ -31,8 +31,8 @@
         z-index: 3;
 
         @include devices {
-            padding-top: 98px;
-            padding-bottom: 87px;
+            padding-top: vh(98);
+            padding-bottom: vc(87);
 
             .title {
                 @include devices {
@@ -46,7 +46,7 @@
         padding-top: 136px;
 
         @include devices {
-            padding-top: 54px;
+            padding-top: vc(54);
 
             .insert-2 {
                 .text {
@@ -61,7 +61,7 @@
         padding-top: 176px;
 
         @include devices {
-            padding-top: 165px;
+            padding-top: vc(165);
         }
     }
 
@@ -70,7 +70,7 @@
         padding-top: 150px;
 
         @include devices {
-            padding-top: 146px;
+            padding-top: vc(146);
 
             .title-xl {
                 text-align: left !important;
@@ -82,7 +82,7 @@
         padding-top: 169px;
 
         @include devices {
-            padding-top: 86px;
+            padding-top: vc(86);
         }
     }
 
@@ -91,14 +91,14 @@
         padding-bottom: 0;
 
         @include devices {
-            padding-top: 96px;
+            padding-top: vc(96);
             padding-bottom: 0;
         }
     }
 
     &--9 {
       @include devices {
-          padding-top: 108px;
+          padding-top: vc(108);
       }
     }
 
@@ -106,7 +106,7 @@
         padding-top: 65px;
 
         @include devices {
-            padding-top: 120px;
+            padding-top: vc(120);
         }
     }
 
@@ -114,7 +114,7 @@
         padding-top: 15px;
 
         @include devices {
-            padding-top: 69px;
+            padding-top: vc(69);
 
             .insert-1 {
                 flex-flow: column;
@@ -124,15 +124,15 @@
                 }
 
                 .insert-image {
-                    margin: 0 -40px;
+                    margin: 0 vc(-40);
                     order: 2;
-                    width: 386px;
-                    height: 386px;
+                    width: vc(386);
+                    height: vc(386);
                 }
 
                 &::after {
                     background-size: cover;
-                    height: 783px;
+                    height: vc(783);
                 }
             }
         }

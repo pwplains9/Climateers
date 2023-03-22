@@ -18,10 +18,10 @@
                 background: url("../assets/images/shadow/6.png") center center no-repeat;
 
                 @include devices {
-                    left: -276px;
-                    top: -40px;
-                    width: 640px;
-                    height: 410px;
+                    left: vc(-276);
+                    top: vc(-40);
+                    width: vc(640);
+                    height: vc(410);
                     background: url("../assets/images/shadow/6-1.png") center center no-repeat;
                     background-size: cover;
                 }
@@ -38,9 +38,9 @@
                 background: url("../assets/images/shadow/7.png") center center no-repeat;
 
                 @include devices {
-                    top: 10px;
-                    width: 640px;
-                    height: 246px;
+                    top: vc(10);
+                    width: vc(640);
+                    height: vc(246);
                     background: url("../assets/images/shadow/6-2.png") center center no-repeat;
                     background-size: cover;
                 }
@@ -105,8 +105,8 @@
 
         @include devices {
             position: absolute;
-            right: -45px;
-            top: -9px;
+            right: vc(-45);
+            top: vc(-9);
 
 
             img {
@@ -116,45 +116,45 @@
             }
 
             &--1 {
-                width: 208px;
-                height: 208px;
+                width: vc(208);
+                height: vc(208);
 
                 img {
                     position: absolute;
                     left: auto;
                     right: 0;
-                    top: -47px;
+                    top: vc(-47);
                     transform: scaleX(-1);
                 }
             }
 
             &--2 {
 
-                right: 2px;
-                top: -51px;
-                width: 130px;
-                height: 130px;
+                right: vc(2);
+                top: vc(-51);
+                width: vc(130);
+                height: vc(130);
             }
 
             &--3 {
-                width: 136px;
-                height: 136px;
+                width: vc(136);
+                height: vc(136);
 
                 img {
                     position: absolute;
 
-                    left: -26px;
+                    left: vc(-26);
 
-                    top: -3px;
+                    top: vc(-3);
                     transform: scaleX(-1);
                 }
             }
 
             &--4 {
-                top: -56px;
-                right: 4px;
-                width: 152px;
-                height: 152px;
+                top: vc(-56);
+                right: vc(4);
+                width: vc(152);
+                height: vc(152);
             }
         }
     }
@@ -176,10 +176,10 @@
     }
 
     @include devices {
-        margin-top: 68px;
+        margin-top: vc(68);
 
         &--right {
-            margin-top: 83px;
+            margin-top: vc(83);
         }
     }
 }

@@ -47,10 +47,10 @@
 
     @include devices {
         padding: 0 vc(16);
-        max-width: 360px;
+        max-width: vc(360);
 
         &--cases {
-            margin-top: 159px;
+            margin-top: vc(159);
         }
 
         &--partners {
@@ -111,8 +111,8 @@
         line-height: 96px;
 
         @include devices {
-            font-size: 48px;
-            line-height: 56px;
+            font-size: vc(48);
+            line-height: vc(56);
             letter-spacing: -0.04em;
         }
     }
@@ -149,6 +149,11 @@
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.04em;
+
+        @include devices {
+            font-size: vc(16);
+            line-height: vc(24);
+        }
     }
 
     &--1 {
@@ -181,6 +186,10 @@
 
 .lh-28 {
     line-height: 28px;
+
+    @include devices {
+        line-height: vc(28);
+    }
 }
 
 .color-black {
@@ -199,7 +208,7 @@
     margin-bottom: 41px;
 
     @include devices {
-        margin-bottom: 33px;
+        margin-bottom: vc(33);
     }
 }
 
@@ -245,10 +254,11 @@
             background: url("../assets/images/shadow/1.png") center center no-repeat;
 
             @include devices {
-                top: -57px;
-                width: 658px;
-                height: 347px;
+                top: vc(-57);
+                width: vc(658);
+                height: vc(347);
                 background: url("../assets/images/shadow/1-1.png") center center no-repeat;
+                background-size: cover;
             }
         }
     }
@@ -264,11 +274,12 @@
             background: url("../assets/images/shadow/3.png") center center no-repeat;
 
             @include devices {
-                top: -51px;
-                margin-left: -306px;
-                width: 658px;
-                height: 523px;
+                top: vc(-51);
+                margin-left: vc(-306);
+                width: vc(658);
+                height: vc(523);
                 background: url("../assets/images/shadow/3-1.png") center center no-repeat;
+                background-size: contain;
             }
         }
     }
@@ -284,17 +295,18 @@
             background: url("../assets/images/shadow/5.png") center center no-repeat;
 
             @include devices {
-                top: -51px;
-                margin-left: -220px;
-                width: 496px;
-                height: 339px;
+                top: vc(-51);
+                margin-left: vc(-220);
+                width: vc(496);
+                height: vc(339);
                 background: url("../assets/images/shadow/3-2.png") center center no-repeat;
+                background-size: contain;
             }
 
         }
 
         @include devices {
-            margin-top: 184px;
+            margin-top: vc(184);
         }
     }
 
@@ -318,10 +330,10 @@
 
             @include devices {
                 position: absolute;
-                right: -120px;
-                top: 4px;
-                width: 301px;
-                height: 301px;
+                right: vc(-120);
+                top: vc(4);
+                width: vc(301);
+                height: vc(301);
                 opacity: 0.2;
 
                 &-1 {
@@ -340,8 +352,8 @@
                 position: absolute;
                 right: -131%;
                 top: -13%;
-                width: 583px;
-                height: 584px;
+                width: vc(583);
+                height: vc(584);
 
             }
         }
@@ -353,10 +365,10 @@
 
             @include devices {
                 z-index: 2;
-                left: -91px;
-                top: 185px;
-                width: 148.12px;
-                height: 148.12px;
+                left: vc(-91);
+                top: vc(185);
+                width: vc(148.12);
+                height: vc(148.12);
             }
         }
 
@@ -366,9 +378,9 @@
             top: -38px;
 
             @include devices {
-                top: 181px;
-                width: 139.77px;
-                height: 139.77px;
+                top: vc(181);
+                width: vc(139.77);
+                height: vc(139.77);
             }
         }
     }

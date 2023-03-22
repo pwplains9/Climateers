@@ -35,7 +35,7 @@
         }
 
         @include devices {
-            margin-top: -9px;
+            margin-top: vc(-9);
         }
     }
 
@@ -52,7 +52,7 @@
         }
 
         @include devices {
-            margin: 0 0 24px;
+            margin: 0 0 vc(24);
             width: 100%;
         }
     }
@@ -101,21 +101,21 @@
         background-size: contain;
 
         @include devices {
-            margin: 42px auto 0;
-            width: 328px;
-            height: 180px;
+            margin: vc(42) auto 0;
+            width: vc(328);
+            height: vc(180);
             background: url('../assets/images/the-game/s-4-2.png') center center no-repeat;
             background-size: contain;
 
             .title {
-                padding: 0 38px;
+                padding: 0 vc(38);
                 text-align: center !important;
             }
         }
     }
 
     @include devices {
-        padding-top: 55px;
+        padding-top: vc(55);
         height: auto;
         background-size: 120%;
         background-position: 128px 28px;

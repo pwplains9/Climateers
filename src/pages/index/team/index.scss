@@ -55,7 +55,7 @@
 
         @include devices {
             flex-shrink: 0;
-            width: 360px;
+            width: vc(360);
         }
     }
 
@@ -80,6 +80,6 @@
         padding-top: 0;
         background-size: 140% !important;
         background-position: -75px -2px !important;
-        height: 389px;
+        height: vc(389);
     }
 }
