@@ -3,15 +3,15 @@ import { config } from '../../config';
 const domain = config.html.domain;
 const baseDir = config.html.isProd() ? config.html.publicPath : config.html.publicPathDev;
 const share = {
-    title: 'Climateers',
-    description: '-',
+    title: 'The Climateers',
+    description: 'Climate Kingdoms is the first dynamic real world play-for-purpose climate game ever created. All positive actions in the game are directly reflected in real life, for example the building of a well or school. The game is designed to protect biodiversity, raise climate awareness, generate financial contributions to projects and build a community around the issue of climate change.',
 };
 
 export default {
     domain,
     baseDir,
-    title: 'Climateers',
-    description: '-',
+    title: 'The Climateers',
+    description: 'Climate Kingdoms is the first dynamic real world play-for-purpose climate game ever created. All positive actions in the game are directly reflected in real life, for example the building of a well or school. The game is designed to protect biodiversity, raise climate awareness, generate financial contributions to projects and build a community around the issue of climate change.',
     keywords: '-',
     image: `${domain}assets/images/share/vk.jpg`,
     link: {
