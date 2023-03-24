@@ -30,7 +30,7 @@
             height: 768px;
 
             @include desktop {
-                animation: bg 10s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+
             }
 
             @include devices {
